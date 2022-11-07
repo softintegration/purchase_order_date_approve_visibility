@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="group_purchase_order_date_approve_visible" model="res.groups">
+            <field name="name">See/Edit Purchase order confirmation date</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+        </record>
+
+    </data>
+
+</odoo>
