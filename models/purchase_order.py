@@ -15,8 +15,8 @@ class PurchaseOrder(models.Model):
         for each in self:
             if each.date_approve:date_approve_by_order.update({each.id:each.date_approve})
         res = super(PurchaseOrder, self).button_approve(force=force)
-        #FIXME:we have to discuss this solutions from performance point of view (send sql query as many as records in rcordset is bad,
+        #FIXME:we have to discuss this solutions from performance point of view (send sql query as many as records in recordset is bad,
         # but is the ORM take in care this?),however this solution ensure the call the super method which is crucial
-        for each in self:
+        for each in self.browse(date_approve_by_order.keys()):
             each.write({"date_approve":date_approve_by_order.get(each.id)})
         return res
