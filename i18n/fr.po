@@ -38,4 +38,4 @@ msgstr "Commande fournisseur"
 #. module: purchase_order_date_approve_visibility
 #: model:res.groups,name:purchase_order_date_approve_visibility.group_purchase_order_date_approve_visible
 msgid "See/Edit Purchase order confirmation date"
-msgstr "Visualiser/Modifier la date de confirmation de la commande achat."
+msgstr "Visualiser/Modifier la date de confirmation de la commande achat"

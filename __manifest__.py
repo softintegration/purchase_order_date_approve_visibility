@@ -2,7 +2,7 @@
 
 {
     'name': 'Purchase order confirmation date visibility',
-    'version': '1.0.1.1',
+    'version': '1.0.1.2',
     'author':'Soft-integration',
     'category': 'Sales',
     'summary': 'Configure the visibility of Purchase order confirmation date',
